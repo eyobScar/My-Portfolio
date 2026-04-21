@@ -43,38 +43,7 @@ const Navbar = () => {
     }
   };
 
-  const scrollReveal = (options = {}) => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const { threshold = 0.1, rootMargin = "0px" } = options;
-    const ref = useRef(null);
-
-    useEffect(() => {
-      const element = ref.current;
-      if (!element) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(element);
-          }
-        },
-        {
-          threshold,
-          rootMargin,
-        },
-      );
-      observer.observe(element);
-      return () => {
-        if (element) {
-          observer.unobserve(element);
-        }
-      };
-    }, [threshold, rootMargin]);
-    return { ref, isVisible };
-  };
-
+  
   const handleNavClick = (sectionId) => {
     scrollToSection(sectionId);
     // setIsOpenMenu(false);
@@ -93,7 +62,7 @@ const Navbar = () => {
         className={`fixed left-0 top-0 right-0 w-full z-1000 py-4 transition-all duration-300 ${isScrolled ? "bg-black/30 backdrop-blur-lg" : "bg-transparent"}`}
         style={{ transform: "translate3d(0,0,0)" }}
       >
-        <div className="max-w[1300px] mx-auto px-5">
+        <div className="max-w-[1300px] mx-auto px-5">
           <div className="flex items-center justify-between">
             <div className="flex gap-2 items-center text-pink-600" style={{}}>
               <Layers />
