@@ -2,31 +2,46 @@ import { Star } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { scrollToSection } from "../../Task/scrollToSection";
 import { FadeIn } from "../../Animations/FadeIn";
+import Typing from "../../Task/Typing";
 import React from "react";
 
 const Hero = () => {
+  const words = ["Frontend", "Backend", "Fullstack"];
   return (
     <section className="min-h-screen mt-50">
       {/* //container */}
       <FadeIn>
-          <div className="relative max-w-80  ">
-            <div className="absolute inset-0 bg-pink-600 rounded-lg blur"></div>
-            <button
-              className="relative bg-black w-full flex item-center justify-center space-x-3 py-1 px-5 rounded-lg text-sm"
-              onClick={() => scrollToSection("contact-me")}
-            >
-              <span className="">
-                <Star className="text-primary w-3 h-3 mt-1" />
-              </span>
-              <span className="divide-x divide-x-primary group">
-                <span className="text-primary pr-5">Full-Stack</span>
-                <span className="text-secondary pl-5 ">
-                  Web Developer
-                  <ArrowRight className="w-10 h-5 inline transition-all duration-400 group-hover:translate-x-2" />
-                </span>
-              </span>
-            </button>
+        <div className="font-bold text-3xl">
+          <h1>Hi there, </h1>
+          <div className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h1>I'm</h1>
+            <h2 >Eyob Alayu</h2>
           </div>
+          <Typing
+            className="bg-linear-to-r from-primary to-secondary text-pink-600"
+            words={words}
+          />
+        </div>
+      </FadeIn>
+      <FadeIn>
+        <div className="relative max-w-80  ">
+          <div className="absolute inset-0 bg-pink-600 rounded-lg blur"></div>
+          <button
+            className="relative bg-black w-full flex item-center justify-center space-x-3 py-1 px-5 rounded-lg text-sm"
+            onClick={() => scrollToSection("contact-me")}
+          >
+            <span className="">
+              <Star className="text-primary w-3 h-3 mt-1" />
+            </span>
+            <span className="divide-x divide-x-primary group">
+              <span className="text-primary pr-5">Full-Stack</span>
+              <span className="text-secondary pl-5 ">
+                Web Developer
+                <ArrowRight className="w-10 h-5 inline transition-all duration-400 group-hover:translate-x-2" />
+              </span>
+            </span>
+          </button>
+        </div>
       </FadeIn>
     </section>
   );
