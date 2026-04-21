@@ -36,7 +36,7 @@ const Typing = ({ words }) => {
     };
   }, [isDeleting, letterInd, wordInd]);
   return (
-    <div className="bg-gradient-to-r from-primary via-purple to-secondary bg-clip-text text-transparent bg-[length:200%_auto] text-4xl  font-bold my-5 animate-[slide_3s_linear_infinite]">
+    <div className="bg-gradient-to-r from-primary via-purple to-secondary bg-clip-text text-transparent bg-[length:200%_auto] text-3xl md:text-4xl  font-bold my-5 animate-[slide_3s_linear_infinite]">
       I develop {text}
     </div>
   );

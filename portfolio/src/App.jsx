@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <p id="home" className="mt-100">
+      <p id="home" className="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
         voluptatem, quisquam commodi veniam molestiae vel odio nesciunt fugiat
         omnis repellendus suscipit fugit doloribus accusantium reprehenderit
