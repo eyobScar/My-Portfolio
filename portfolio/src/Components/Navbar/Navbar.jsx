@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { navLinks } from "../../Data/navLinks";
-import { Layers, Menu, X } from "lucide-react";
+import { Layers, Menu, Moon, Sun, X } from "lucide-react";
 import { personalInfo } from "../../Data/aboutMe";
 import { scrollToSection } from "../../Task/scrollToSection";
 import { useScrollSpy } from "../../Task/useScrollSpy";
@@ -8,6 +8,7 @@ import { useScrollSpy } from "../../Task/useScrollSpy";
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mode, setMode] = useState("dak");
 
   const activeSection = useScrollSpy(navLinks.map((item) => item.id));
 
@@ -56,18 +57,24 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="hidden md:flex items-center">
+            <div className="hidden md:flex items-center gap-4">
               <button
                 className="border border-pink-600 px-10 py-1 rounded-full text-base text-cyan-600 font-bold"
                 onClick={() => scrollToSection("contact-me")}
               >
                 Get Me
               </button>
-            </div>
-            <div className="group md:hidden">
+              <div className="-order-1">
+                {mode === "dark" ? <Sun /> : <Moon />}
+              </div>
+            </div> <div className="-order-1">
+                {mode === "dark" ? <Sun /> : <Moon  />}
+              </div>
+
+            <div className="group md:hidden flex items-center gap-2">
               <button
                 onClick={() => setIsOpenMenu(!isOpenMenu)}
-                className="transition-all duration-300 opacity-80 group-hover:opacity-100 p-4"
+                className="transition-all duration-300 opacity-80 group-hover:opacity-100 "
                 aria-label="menu"
                 aria-expanded={isOpenMenu}
               >
@@ -77,6 +84,9 @@ const Navbar = () => {
                   <Menu className="w-6 h-6" />
                 )}
               </button>
+              <div className="-order-1">
+                {mode === "dark" ? <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300"/> : <Moon className="w-5 text-black opacity-80 hover:opacity-100 transition-all duration-300"/>}
+              </div>
             </div>
           </div>
 

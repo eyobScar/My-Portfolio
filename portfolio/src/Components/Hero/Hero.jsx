@@ -10,7 +10,7 @@ const Hero = () => {
   const words = ["Frontend", "Backend", "Fullstack"];
   return (
     <section
-      className="min-h-[700px] pt-30 sm:pt-0 flex items-center"
+      className="min-h-[700px] pt-30 sm:pt-0 flex items-center "
       id="home"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">

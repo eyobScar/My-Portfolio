@@ -14,7 +14,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #000;
+    /* background-color: #000; */
     color: #fff;
     overflow-x: hidden;
     /* -webkit-font-smoothing: antialiazed;

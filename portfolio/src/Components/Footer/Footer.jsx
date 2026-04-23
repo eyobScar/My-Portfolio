@@ -11,7 +11,7 @@ import { scrollToSection } from "../../Task/scrollToSection";
 
 const Footer = () => {
   return (
-    <section className="my-20 ">
+    <section className="mt-20 pb-20">
       <div className="flex flex-col gap-5 md:grid grid-cols-[2fr_1fr_1fr] ">
         <div className="flex flex-col gap-4">
           <div className="">

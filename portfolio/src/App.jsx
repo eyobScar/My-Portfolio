@@ -9,14 +9,16 @@ import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="px-3 sm:px-4 md:px-5 max-w-[1300px] mx-auto">
-      <Navbar />
-      <Hero />
-      <About />
-      <TechStack />
-      <Projects />
-      <ContactMe />
-      <Footer />
+    <div className="bg-black">
+      <div className="px-3 sm:px-4 md:px-5 max-w-[1300px] mx-auto">
+        <Navbar />
+        <Hero />
+        <About />
+        <TechStack />
+        <Projects />
+        <ContactMe />
+        <Footer />
+      </div>
     </div>
   );
 };
