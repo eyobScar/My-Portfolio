@@ -1,7 +1,7 @@
 import { MapPin, Send } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { SiChatbot } from "react-icons/si";
-import { FaGithub , FaLinkedin , FaTelegram} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { Mail } from "lucide-react";
 import emailjs from "emailjs-com";
 
@@ -74,9 +74,9 @@ const ContactMe = () => {
         },
       );
   };
-  useEffect(() => {
-    console.log(formData, status);
-  }, [formData, status]);
+  // useEffect(() => {
+  //   console.log(formData, status);
+  // }, [formData, status]);
   return (
     <section className="max-w-[1300px] mx-auto mt-20 px-5 " id="contact-me">
       <div className="flex flex-col gap-3 ">

@@ -12,7 +12,7 @@ import { scrollToSection } from "../../Task/scrollToSection";
 const Footer = () => {
   return (
     <div className="px-5 my-20">
-      <div className="flex flex-col gap-5 md:grid grid-cols-3">
+      <div className="flex flex-col gap-5 md:grid grid-cols-[2fr_1fr_1fr] ">
         <div className="flex flex-col gap-4">
           <div className="">
             <h3 className="bg-gradient-to-r from-primary to-secondary text-2xl w-fit bg-clip-text text-transparent font-bold">
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div group>
-          <h3 className="font-bold text-2xl">Quick Links</h3>
+          <h3 className="font-bold text-xl">Quick Links</h3>
           <ul className="list-disc pl-5 marker:text-primary/50 group">
             {navLinks.map((link) => (
               <li key={link._id} className="hover:marker:text-primary/100 ">
@@ -51,7 +51,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="text-2xl">Connect with Me</h3>
+          <h3 className="text-xl">Connect with Me</h3>
           <p className="opacity-60">Feel free to contact</p>
           <div className="flex">
             <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
@@ -72,14 +72,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center mt-20 md:mt-40 ">
+      <div className="flex flex-col items-center mt-20 md:mt-30 ">
         <p className="opacity-40">&copy; 2026 Eyob Alayu All rights reserved</p>
         <div className="opacity-">
           <span className="opacity-40">Buil with</span>
           <span className="">
-            <Heart className="inline mx-2 animate-pulse text-primary fill-primary" />
+            <Heart className="mb-1 inline mx-2 animate-pulse text-primary fill-primary w-4" />
           </span>
-          <span className="opacity-40">Using React & Tailwindcss</span>
+          <span className="opacity-40">using React & Tailwindcss</span>
         </div>
       </div>
     </div>

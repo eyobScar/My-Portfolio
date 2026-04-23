@@ -1,3 +1,4 @@
+import { Circle, Dot } from "lucide-react";
 import React from "react";
 
 const Project = ({
@@ -11,7 +12,7 @@ const Project = ({
   return (
     <div className="p-2  max-w-[400px] md:max-w-full">
       <div className="flex flex-col gap-3 items-center hover:scale-101 transition-all duration-300">
-        <div className=" bg-gray-900 rounded-lg p-4">
+        <div className=" bg-accent rounded-lg p-4">
           <div className="overflow-hidden">
             <img
               src={image}
@@ -32,6 +33,19 @@ const Project = ({
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="flex justify-between mt-4">
+            <div className="flex gap-1 items-center border border-primary/30 rounded-lg p-2 cursor-pointer">
+              <Circle
+                className="fill-green-500 text-green-500 w-3 h-3 animate-pulse
+               border border-green-500/30 rounded-full
+              "
+              />
+              <p className="text-sm">Live Preview</p>
+            </div>
+            <div className="flex gap-1 items-center border border-primary/30 rounded-lg p-2 cursor-pointer">
+              <p className="text-sm">Github Code</p>
+            </div>
           </div>
         </div>
       </div>
