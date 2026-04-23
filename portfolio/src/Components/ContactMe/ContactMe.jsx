@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { SiChatbot, SiGit } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Mail } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +19,9 @@ const ContactMe = () => {
     });
   };
   const handleSubmit = (e) => {
+    const SERVICE_ID = "service_t0dqbbq";
+    const TEMPLATE_ID = "template_qrcmh3q";
+    const PUBLIC_KEY = "O14IazXdphuobWLUn";
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({
@@ -31,17 +35,44 @@ const ContactMe = () => {
       setStatus({ type: "Error", message: "Please enter a valid Email" });
       return;
     }
-    setStatus({
-      type: "success",
-      message: "The message has been sent successfully I am gonna get you soon",
-    });
-    setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }, 5000);
+
+    emailjs
+      .send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        PUBLIC_KEY,
+      )
+      .then(
+        () => {
+          setStatus({
+            type: "success",
+            message:
+              "The message has been sent successfully I am gonna get you soon",
+          });
+          setTimeout(() => {
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+            });
+            setStatus({
+              type: "",
+              message: "",
+            });
+          }, 5000);
+        },
+        (error) => {
+          setStatus({
+            type: "error",
+            message: "Failed to send message",
+          });
+        },
+      );
   };
   useEffect(() => {
     console.log(formData, status);
@@ -51,7 +82,7 @@ const ContactMe = () => {
       <div className="flex flex-col gap-3 ">
         <div>
           <div className="flex items-center justify-center gap-2 border border-primary w-fit px-2 py-[2px] rounded-lg bg-primary/10 my-2 mx-auto">
-            <SiChatbot className="text-primary"/>
+            <SiChatbot className="text-primary" />
             <span className="text-secondary">Get In Touch</span>
           </div>
           <p className="text-center opacity-80 my-2">
@@ -60,7 +91,6 @@ const ContactMe = () => {
           <div className="flex flex-col gap-5 md:flex-row items-center">
             <div className="w-full">
               <form
-                action=""
                 onSubmit={handleSubmit}
                 className="bg-gray-900 flex flex-col gap-4 rounded-lg p-5"
               >
@@ -88,8 +118,8 @@ const ContactMe = () => {
                     className="px-4 py-2 bg-secondary/10 rounded-lg outline-none"
                   />
                 </div>
-                <div className="flex flex-col">
-                  <label htmlFor="message"></label>
+                <div className="flex flex-col gap1">
+                  <label htmlFor="message">Message</label>
                   <textarea
                     id="message"
                     type="text"
@@ -146,7 +176,10 @@ const ContactMe = () => {
                   <a href="https://github.com/eyobScar" target="_blank">
                     <SiGit className="text-2xl text-primary opacity-70 hover:opacity-100 transition-all duration-300" />
                   </a>
-                  <a href="https://www.linkedin.com/in/eyobScar" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/eyobScar"
+                    target="_blank"
+                  >
                     <FaLinkedinIn className="text-2xl text-primary opacity-70 hover:opacity-100 transition-all duration-300" />
                   </a>
                 </div>
