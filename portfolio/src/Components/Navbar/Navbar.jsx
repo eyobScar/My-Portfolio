@@ -8,9 +8,8 @@ import { useScrollSpy } from "../../Task/useScrollSpy";
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(localStorage.getItem("theme") === "dark");
 
-  localStorage.setItem("theme", "dark");
 
   useEffect(() => {
     const root = document.documentElement;
@@ -72,7 +71,10 @@ const Navbar = () => {
               >
                 Get Me
               </button>
-              <div className="-order-1" onClick={() => setDark((dark) => !dark)}>
+              <div
+                className="-order-1"
+                onClick={() => setDark((dark) => !dark)}
+              >
                 {dark ? (
                   <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
                 ) : (
@@ -87,7 +89,7 @@ const Navbar = () => {
                 aria-label="menu"
                 aria-expanded={isOpenMenu}
               >
-                <div >
+                <div>
                   {isOpenMenu ? (
                     <X className="w-6 h-6 text-black dark:text-white" />
                   ) : (
@@ -95,7 +97,10 @@ const Navbar = () => {
                   )}
                 </div>
               </button>
-              <div className="-order-1 " onClick={() => setDark((dark) => !dark)}>
+              <div
+                className="-order-1 "
+                onClick={() => setDark((dark) => !dark)}
+              >
                 {dark ? (
                   <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
                 ) : (
