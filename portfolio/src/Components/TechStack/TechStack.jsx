@@ -37,14 +37,14 @@ const TechStack = () => {
             <div className="absolute rounded-md bg-primary inset-0 blur "></div>
             <div className="relative flex items-center space-x-2  w-30 sm:w-40 rounded-md px-3 py-1 bg-black ">
               <FaJs className="text-primary text-5xl opacity-70 group-hover:opacity-100  transition-all duration-300" />
-              <span className="text-secondary group-hover:[text-shadow:0_0_5px_rgba(82,159,237,0.9)]">Javascript</span>
+              <span className="text-secondary group-hover:[text-shadow:0_0_5px_rgba (82,159,237,0.9)]">Javascript</span>
             </div>
           </div>
           <div className="relative w-30 sm:w-40 group ">
             <div className="absolute rounded-md bg-primary inset-0 blur "></div>
             <div className="relative flex items-center space-x-2  w-30 sm:w-40 rounded-md px-3 py-1 bg-black">
               <SiTailwindcss className="text-primary text-5xl opacity-70 group-hover:opacity-100  transition-all duration-300" />
-              <span className="text-secondary group-hover:[text-shadow:0_0_5px_rgba(82,159,237,0.9)]">Tailwindcss</span>
+              <span className="text-secondary group-hover:[text-shadow:0_0_5px_rgba(82,159,237,0.9)]">Tailwind</span>
             </div>
           </div>
           {/*  */}

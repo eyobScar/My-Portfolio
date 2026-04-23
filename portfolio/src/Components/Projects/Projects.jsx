@@ -5,10 +5,10 @@ import image from "../../assets/food_delivery.png";
 
 const Projects = () => {
   return (
-    <section className="max-w-[1300px] mx-auto px-5 ">
+    <section className="max-w-[1300px] mx-auto px-5 " id="projects">
       <div className="text-center">
         <h3 className="text-2xl">My Projects</h3>
-        <hr className="w-13 mx-auto text-primary border-none h-1 bg-primary my-2" />
+        <hr className="w-20 mx-auto text-primary border-none h-1 bg-primary my-2" />
         <p className="opacity-80">Projects I have built </p>
       </div>
       <div className="flex justify-center">

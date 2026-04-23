@@ -10,8 +10,8 @@ const Project = ({
 }) => {
   return (
     <div className="p-2  max-w-[400px] md:max-w-full">
-      <div className="flex flex-col gap-3 items-center  box-shadow:0_0_10px_rgba(255,255,255,0.6)">
-        <div className=" bg-black/50 rounded-lg p2">
+      <div className="flex flex-col gap-3 items-center hover:scale-101 transition-all duration-300">
+        <div className=" bg-gray-900 rounded-lg p-4">
           <div className="overflow-hidden">
             <img
               src={image}

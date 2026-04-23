@@ -5,6 +5,7 @@
   --breakpoint-3x1: 1920px;
   --color-primary: #ff4ecd;
   --color-secondary: #4da6ff;
+  --color-accent : #111827
 }
 
 @layer base {
