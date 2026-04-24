@@ -15,7 +15,7 @@ export const projects = [
     title: "My Portfolio",
     description:
       "A modern and responsive portfolio website built using React and Tailwind CSS to showcase my projects, skills, and experience. The application focuses on clean design, smooth user experience, and mobile-friendly layouts.",
-    image: "/assets/portfolio.png",
+    image: "/src/assets/portfolio.png",
     category: "Full Stack",
     techs: ["React", "tailwind", "mailjs"],
     liveURL: "https://eyobas-portfolio.vercel.app/",
