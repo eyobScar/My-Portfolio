@@ -127,7 +127,7 @@ const Navbar = () => {
                 ))}
               </ul>
               <button
-                className="md:hidden w-full border border-pink-600 py-2 rounded-full"
+                className="md:hidden w-full text-secondary border border-pink-600 py-2 rounded-full"
                 onClick={() => {
                   scrollToSection("contact-me");
                   setIsOpenMenu(false);

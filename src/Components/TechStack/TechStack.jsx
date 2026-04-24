@@ -36,8 +36,8 @@ const TechStack = () => {
       <FadeIn>
         <div className="flex justify-center items-center ">
           <div className="flex flex-wrap gap-10 sm:gap-15 md:gap-20 mt-10 justify-center">
-            {icons.map((icon) => (
-              <svg className=" icon w-15 h-15 min-[400px]:w-20 h-20 sm:w-25 h-25 ">
+            {icons.map((icon , ind) => (
+              <svg key={ind} className=" icon w-15 h-15 min-[400px]:w-20 h-20 sm:w-25 h-25 ">
                 <use href={`/sprite.svg#${icon}`} />
               </svg>
             ))}
