@@ -12,7 +12,7 @@ export const projects = [
     image: foodDelivery,
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
-    liveURL: "https://eyobas-food-delivery.vercel.app/",
+    liveURL: "https://eyobas-food-delivery-frontend.onrender.com/",
     githubURL: "https://github.com/eyobScar/eyob-portfolio.git",
   },
   {
