@@ -3,19 +3,24 @@ import React, { useEffect, useState } from "react";
 import { SiChatbot } from "react-icons/si";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { Mail } from "lucide-react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
-  emailjs.init("O14IazXdphuobWLUn");
   const SERVICE_ID = "service_t0dqbbq";
   const TEMPLATE_ID = "template_qrcmh3q";
-  const PUBLIC_KEY = "O14IazXdphuobWLUn";
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const [status, setStatus] = useState({ type: "", message: "" });
+
+  useEffect(() => {
+    emailjs.init(PUBLIC_KEY);
+  }, []);
   const handleChange = ({ target }) => {
     setFormData({
       ...formData,
