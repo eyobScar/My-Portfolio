@@ -1,7 +1,6 @@
-import foodDelivery from "../assets/food_delivery.png"
-import portfolio from "../assets/portfolio.png"
-import future from "../assets/future.png"
-
+import foodDelivery from "../assets/food_delivery.png";
+import portfolio from "../assets/portfolio.png";
+import future from "../assets/future.png";
 
 export const projects = [
   {
@@ -20,7 +19,7 @@ export const projects = [
     title: "My Portfolio",
     description:
       "A modern and responsive portfolio website built using React and Tailwind CSS to showcase my projects, skills, and experience. The application focuses on clean design, smooth user experience, and mobile-friendly layouts.",
-    image:portfolio,
+    image: portfolio,
     category: "Full Stack",
     techs: ["React", "tailwind", "mailjs"],
     liveURL: "https://eyobas-portfolio.vercel.app/",
@@ -30,7 +29,7 @@ export const projects = [
     id: 3,
     title: "Work in Progress",
     description:
-      "I’m actively building and exploring new ideas through multiple projects. Every day is dedicated to learning, improving, and creating meaningful digital experiences. This is just the beginning—there’s a lot more coming soon.",
+      "I’m actively building and exploring new ideas through multiple projects. Every day is dedicated to learning, improving, and creating meaningful digital experiences. This is just the beginning.there’s a lot more coming soon.",
     image: future,
     category: "",
     techs: [],

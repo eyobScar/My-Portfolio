@@ -8,11 +8,10 @@ import { useScrollSpy } from "../../Task/useScrollSpy";
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [dark, setDark] = useState(()=>{
+  const [dark, setDark] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme ? savedTheme ==="dark":true;
-  }
-
+    return savedTheme ? savedTheme === "dark" : true;
+  });
 
   useEffect(() => {
     const root = document.documentElement;
