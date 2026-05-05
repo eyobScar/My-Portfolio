@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { FadeIn } from "../../Animations/FadeIn";
+import { Download } from "lucide-react";
 
 const About = () => {
   const [isCollapssed, setIsCollapssed] = useState(true);
@@ -16,28 +17,29 @@ const About = () => {
             className={`text-black/70 dark:text-white/50 transition-all duration-300 ${isCollapssed ? "line-clamp-4" : ""} `}
           >
             <p>
-              Thank you for taking the time to visit my portfolio. I’m Eyob Alayu,
-              a third-year Information Technology student at Bahir Dar University
-              with a strong interest in full-stack web development. I’m currently
-              seeking an internship opportunity where I can apply my skills, gain
-              real-world experience, and continue growing as a developer.
+              Thank you for taking the time to visit my portfolio. I’m Eyob
+              Alayu, a third-year Information Technology student at Bahir Dar
+              University with a strong interest in full-stack web development.
+              I’m currently seeking an internship opportunity where I can apply
+              my skills, gain real-world experience, and continue growing as a
+              developer.
             </p>
             <br />
             <p>
               Although I’m still early in my journey, I have many ideas and
               ambitions I’m eager to explore. I’m constantly learning,
-              experimenting, and challenging myself to turn those ideas into real,
-              meaningful projects. I enjoy building applications, exploring new
-              technologies, and improving my skills every day through consistent
-              practice.
+              experimenting, and challenging myself to turn those ideas into
+              real, meaningful projects. I enjoy building applications,
+              exploring new technologies, and improving my skills every day
+              through consistent practice.
             </p>
             <br />
             <p>
               I take real pleasure in solving problems, creating user-friendly
               experiences, and transforming concepts into working solutions. I
-              hope my work reflects my dedication and passion for this field, and
-              I look forward to opportunities where I can learn, contribute, and
-              grow further.
+              hope my work reflects my dedication and passion for this field,
+              and I look forward to opportunities where I can learn, contribute,
+              and grow further.
             </p>
           </div>
         </FadeIn>
@@ -55,6 +57,14 @@ const About = () => {
               />
             </span>
           </button>
+        </div>
+        <div className="flex justify-center">
+          <a href="Eyob_Alayu_CV.pdf" download="Eyob_CV.pdf">
+            <button className=" cursor-pointer border border-primary text-secondary rounded-lg px-4 py-1 mx-auto flex gap-3 group">
+              Download my CV{" "}
+              <Download className="w-4 group-hover:-translate-y-0.5 transition-all duration-500" />
+            </button>
+          </a>
         </div>
       </div>
     </section>

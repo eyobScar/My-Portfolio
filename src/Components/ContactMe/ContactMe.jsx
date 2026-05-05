@@ -96,7 +96,9 @@ const ContactMe = () => {
                 className="dark:bg-accent bg-accent/5 flex flex-col gap-4 rounded-lg p-5"
               >
                 <div className="flex flex-col gap-1">
-                  <label htmlFor="name" className="text-black dark:text-white">Name</label>
+                  <label htmlFor="name" className="text-black dark:text-white">
+                    Name
+                  </label>
                   <input
                     id="name"
                     type="text"
@@ -108,7 +110,9 @@ const ContactMe = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label htmlFor="email" className="text-black dark:text-white">Email</label>
+                  <label htmlFor="email" className="text-black dark:text-white">
+                    Email
+                  </label>
                   <input
                     id="email"
                     type="email"
@@ -120,7 +124,12 @@ const ContactMe = () => {
                   />
                 </div>
                 <div className="flex flex-col gap1">
-                  <label htmlFor="message" className="text-black dark:text-white">Message</label>
+                  <label
+                    htmlFor="message"
+                    className="text-black dark:text-white"
+                  >
+                    Message
+                  </label>
                   <textarea
                     id="message"
                     type="text"
@@ -154,8 +163,12 @@ const ContactMe = () => {
             </div>
             <div className="w-full flex flex-col gap-4">
               <div>
-                <p className="text-2xl text-black dark:text-white">Let's connect</p>
-                <p className="opacity-70 text-black/80 dark:text-white/80">Feel free to reach out</p>
+                <p className="text-2xl text-black dark:text-white">
+                  Let's connect
+                </p>
+                <p className="opacity-70 text-black/80 dark:text-white/80">
+                  Feel free to reach out
+                </p>
               </div>
               <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg">
                 <Mail className="text-primary" />
@@ -166,13 +179,15 @@ const ContactMe = () => {
               </div>
               <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg">
                 <MapPin className="text-primary" />
-                <div className="text-secondary">
-                  <p>Location</p>
-                  <p>Bahirdar University</p>
-                </div>
+                <a className="text-secondary" href="tel:+251938241127">
+                  <p>Call Me</p>
+                  <p>+251938241127</p>
+                </a>
               </div>
               <div>
-                <p className="text-black/70 darK:text-white/70">You can get me through</p>
+                <p className="text-black/70 darK:text-white/70">
+                  You can get me through
+                </p>
                 <div className="flex gap-3">
                   <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
                     <a href="https://github.com/eyobScar" target="_blank">
@@ -186,7 +201,7 @@ const ContactMe = () => {
                   </div>
                   <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
                     <a href="https://t.me/eyob_Scar" target="_blank">
-                      <FaTelegram className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white"  />
+                      <FaTelegram className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white" />
                     </a>
                   </div>
                 </div>
