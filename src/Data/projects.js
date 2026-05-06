@@ -8,7 +8,8 @@ export const projects = [
     title: "Food Delivery",
     description:
       "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
-    image: foodDelivery,
+    image: "food_delivery.webp",
+    image2x: "food_delivery@2x.webp",
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
     liveURL: "https://eyobas-food-delivery-frontend.onrender.com/",
@@ -19,7 +20,8 @@ export const projects = [
     title: "My Portfolio",
     description:
       "A modern and responsive portfolio website built using React and Tailwind CSS to showcase my projects, skills, and experience. The application focuses on clean design, smooth user experience, and mobile-friendly layouts.",
-    image: portfolio,
+    image: "portfolio.webp",
+    image2x: "portfolio@2x.webp",
     category: "Full Stack",
     techs: ["React", "tailwind", "mailjs"],
     liveURL: "https://eyobas-portfolio.vercel.app/",
@@ -30,7 +32,8 @@ export const projects = [
     title: "Work in Progress",
     description:
       "I’m actively building and exploring new ideas through multiple projects. Every day is dedicated to learning, improving, and creating meaningful digital experiences. This is just the beginning.there’s a lot more coming soon.",
-    image: future,
+    image: "future.webp",
+    image2x: "future@2x.webp",
     category: "",
     techs: [],
     liveURL: "https://",

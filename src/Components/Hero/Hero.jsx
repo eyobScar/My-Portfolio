@@ -3,17 +3,17 @@ import { ArrowRight } from "lucide-react";
 import { scrollToSection } from "../../Task/scrollToSection";
 import { FadeIn } from "../../Animations/FadeIn";
 import Typing from "../../Task/Typing";
-import image from "../../assets/image.png";
+
 import React from "react";
 
 const Hero = () => {
   const words = ["Frontend", "Backend", "Fullstack"];
   return (
     <section
-      className="min-h-[700px] pt-30 sm:pt-0 flex items-center "
+      className="min-h-[700px] lg:px-4 pt-30 sm:pt-0 mb-10 sm:mb-0 flex items-center"
       id="home"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
         <div className="flex flex-col gap-5 items-start justify-center">
           <FadeIn>
             <div className="">
@@ -57,12 +57,12 @@ const Hero = () => {
           </FadeIn>
         </div>
         <FadeIn>
-          <div className="relative rounded-2xl orverflow-hidden aspect-4/5 max-w-[500px] md:max-w-[300px] ml-auto group">
-            <div className="absolute inset-0 overflow-hidden rounded-2xl">
+          <div className="relative rounded-2xl orverflow-hidden aspect-1:1 max-w-[200px] sm:ml-auto md:max-w-[250px] lg:max-w-[300px] mx-auto sm:mx-0 group">
+            <div className="absolute inset-0 overflow-hidden rounded-full">
               <div className="absolute overflow-hidden bg-gradient-to-r from-primary/20 via-primary/10 to-primary inset-[-2px] animate-[spin_6s_infinite] rounded-lg"></div>
             </div>
-            <div className="relative rounded-2xl m-[2px] h-cal(100%-2px) overflow-hidden">
-              <img src={image} alt="" className="rounded-lg" />
+            <div className="relative rounded-full m-[5px] h-cal(100%-2px) overflow-hidden">
+              <img src="Eyob_img.webp" alt="" className="rounded-lg" />
             </div>
           </div>
         </FadeIn>
