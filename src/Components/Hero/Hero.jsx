@@ -62,7 +62,12 @@ const Hero = () => {
               <div className="absolute overflow-hidden bg-gradient-to-r from-primary/20 via-primary/10 to-primary inset-[-2px] animate-[spin_6s_infinite] rounded-lg"></div>
             </div>
             <div className="relative rounded-full m-[5px] h-cal(100%-2px) overflow-hidden">
-              <img src="Eyob_img.webp" alt="" className="rounded-lg" />
+              <img
+                src="Eyob_img.webp"
+                srcSet="Eyob_img.webp 1x, Eyob_img@2x.webp 2x"
+                alt=""
+                className="rounded-lg"
+              />
             </div>
           </div>
         </FadeIn>
