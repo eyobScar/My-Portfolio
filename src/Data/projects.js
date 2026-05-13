@@ -29,6 +29,18 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Doctor Appointment",
+    description:
+      "A full-stack doctor appointment booking web application that allows users to register, log in, and book appointments with doctors. It features secure authentication with JWT and a clean, responsive UI with smooth user experience.",
+    image: "doctor_appointment.webp",
+    image2x: "doctor_appointment.webp",
+    category: "Full Stack",
+    techs: ["React", "Tailwind", "Node.js", "Stripe", "MongoDB"],
+    liveURL: "https://eyobas-doctor-appointment-client.onrender.com/",
+    githubURL: "https://github.com/eyobScar/Doctor-Appointment.git",
+  },
+  {
+    id: 4,
     title: "Work in Progress",
     description:
       "I’m actively building and exploring new ideas through multiple projects. Every day is dedicated to learning, improving, and creating meaningful digital experiences. This is just the beginning.there’s a lot more coming soon.",
