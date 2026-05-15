@@ -39,16 +39,4 @@ export const projects = [
     liveURL: "https://eyobas-doctor-appointment-client.onrender.com/",
     githubURL: "https://github.com/eyobScar/Doctor-Appointment.git",
   },
-  {
-    id: 4,
-    title: "Work in Progress",
-    description:
-      "I’m actively building and exploring new ideas through multiple projects. Every day is dedicated to learning, improving, and creating meaningful digital experiences. This is just the beginning.there’s a lot more coming soon.",
-    image: "future.webp",
-    image2x: "future@2x.webp",
-    category: "",
-    techs: [],
-    liveURL: "https://",
-    githubURL: "https://github.com/eyobScar",
-  },
 ];
