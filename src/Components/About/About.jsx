@@ -58,13 +58,29 @@ const About = () => {
             </span>
           </button>
         </div>
-        <div className="flex justify-center">
-          <a href="Eyob_Alayu_CV.pdf" download="Eyob_CV.pdf">
-            <button className=" cursor-pointer border border-primary text-secondary rounded-lg px-4 py-1 mx-auto flex gap-3 group">
-              Download my CV{" "}
-              <Download className="w-4 group-hover:-translate-y-0.5 transition-all duration-500" />
-            </button>
-          </a>
+        <div className="flex flex-col gap-4 mt-10 sm:flex-row sm:justify-center">
+          <div className="flex justify-center group">
+            <a href="Eyob_Alayu_CV.pdf" download="Eyob_CV.pdf">
+              <button className=" cursor-pointer border border-primary text-secondary rounded-lg px-4 py-1 mx-auto flex gap-3 group">
+                <p className="  max-w-0 opacity-0 group-hover:max-w-[100px]  group-hover:opacity-100 transition-all duration-500 whitespace-nowrap">
+                  Download
+                </p>{" "}
+                my CV{" "}
+                <Download className="w-4 group-hover:-translate-y-0.5 transition-all duration-500" />
+              </button>
+            </a>
+          </div>
+          <div className="flex justify-center group">
+            <a href="Internship_paper.pdf" download="Internship_paper.pdf">
+              <button className=" cursor-pointer border border-primary text-secondary rounded-lg px-4 py-1 mx-auto flex gap-3 group">
+                <p className="  max-w-0 opacity-0 group-hover:max-w-[100px]  group-hover:opacity-100 transition-all duration-500 whitespace-nowrap">
+                  Download
+                </p>{" "}
+                Intern Paper{" "}
+                <Download className="w-4 group-hover:-translate-y-0.5 transition-all duration-500" />
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
