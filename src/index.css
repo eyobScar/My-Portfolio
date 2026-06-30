@@ -2,14 +2,12 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 @theme {
   --font-display: "Inter", sans-serif;
   --breakpoint-3x1: 1920px;
   --color-primary: #ff4ecd;
   --color-secondary: #4da6ff;
   --color-accent: #111827;
-  
 }
 
 @layer base {
@@ -80,6 +78,20 @@
     to {
       transform: rotate(360deg);
     }
+  }
+  @keyframes blink {
+    from {
+      scale: 0.3;
+    }
+    50% {
+      scale: 1;
+    }
+    to {
+      scale: 0.3;
+    }
+  }
+  .animate-blink {
+    animation: blink 2s ease-in-out infinite;
   }
   .animate-fadeIn {
     animation: fadeIn 0.5s;

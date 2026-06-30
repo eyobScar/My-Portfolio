@@ -95,7 +95,8 @@ const ContactMe = () => {
             You can send me a message anytime
           </p>
           <div className="flex flex-col gap-5 md:flex-row items-center">
-            <div className="w-full">
+            <div className="w-full"
+            data-aos="fade-right">
               <form
                 onSubmit={handleSubmit}
                 className="dark:bg-accent bg-accent/5 flex flex-col gap-4 rounded-lg p-5"

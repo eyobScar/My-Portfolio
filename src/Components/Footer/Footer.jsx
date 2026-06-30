@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden sm:block self-center mb-30">
+        <div className="hidden sm:block self-center mb-30" data-aos="fade-left">
           <h3 className="text-xl text-black dark:text-white">
             Connect with Me
           </h3>

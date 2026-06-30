@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 const About = () => {
   const [isCollapssed, setIsCollapssed] = useState(true);
   return (
-    <section className="" id="about">
+    <section className="" id="about" data-aos="fade-up">
       <div className="flex flex-col gap-6 max-w-[900px] mx-auto">
         <div className="w-fit mx-auto">
           <h2 className=" text-2xl dark:text-white text-black">About Me</h2>

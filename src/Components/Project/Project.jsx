@@ -52,7 +52,7 @@ const Project = ({
           <div className="flex justify-between mt-4">
             <div className="flex gap-1 items-center border border-primary/30 rounded-lg p-2 cursor-pointer">
               <Circle
-                className="fill-green-500 text-green-500 w-3 h-3 animate-pulse
+                className="fill-green-500 text-green-500 w-3 h-3 animate-blink
                border border-green-500/30 rounded-full
               "
               />

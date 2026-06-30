@@ -28,6 +28,7 @@ const TechStack = () => {
     <section
       className="my-20 max-w-[1100px] mx-auto px-5 w-full "
       id="tech-stack"
+      data-aos="fade-up"
     >
       <div className="w-fit mx-auto text-center">
         <h2 className="text-2xl text-black dark:text-white">My Tech Stacks</h2>
@@ -36,17 +37,18 @@ const TechStack = () => {
           Tools which I am using for development
         </p>
       </div>
-      <FadeIn>
-        <div className="flex justify-center items-center ">
-          <div className="flex flex-wrap gap-10 sm:gap-15 md:gap-20 mt-10 justify-center">
-            {icons.map((icon, ind) => (
-              <svg key={ind} className=" icon w-15 h-15 sm:w-18 sm:h-18  hover:scale-110 duration-300">
-                <use href={`/tech_stack_sprite.svg#${icon}`} />
-              </svg>
-            ))}
-          </div>
+      <div className="flex justify-center items-center ">
+        <div className="flex flex-wrap gap-10 sm:gap-15 md:gap-20 mt-10 justify-center">
+          {icons.map((icon, ind) => (
+            <svg
+              key={ind}
+              className=" icon w-15 h-15 sm:w-18 sm:h-18  hover:scale-110 duration-300"
+            >
+              <use href={`/tech_stack_sprite.svg#${icon}`} />
+            </svg>
+          ))}
         </div>
-      </FadeIn>
+      </div>
     </section>
   );
 };

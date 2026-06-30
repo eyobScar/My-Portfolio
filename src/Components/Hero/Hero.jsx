@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
         <div className="flex flex-col gap-5 items-start justify-center">
           <FadeIn>
-            <div className="">
+            <div className="" data-aos="fade-up">
               <div className="font-bold text-3xl lg:text-4xl">
                 <h1>Hi there, </h1>
                 <div className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -56,21 +56,19 @@ const Hero = () => {
             </div>
           </FadeIn>
         </div>
-        <FadeIn>
-          <div className="relative rounded-2xl orverflow-hidden aspect-1:1 max-w-[200px] sm:ml-auto md:max-w-[250px] lg:max-w-[300px] mx-auto sm:mx-0 group">
-            <div className="absolute inset-0 overflow-hidden rounded-full">
-              <div className="absolute overflow-hidden bg-gradient-to-r from-primary/20 via-primary/10 to-primary inset-[-2px] animate-[spin_6s_infinite] rounded-lg"></div>
-            </div>
-            <div className="relative rounded-full m-[5px] h-cal(100%-2px) overflow-hidden">
-              <img
-                src="Eyob_img.webp"
-                srcSet="Eyob_img.webp 1x, Eyob_img@2x.webp 2x"
-                alt=""
-                className="rounded-lg"
-              />
-            </div>
+        <div className="relative rounded-2xl orverflow-hidden aspect-1:1 max-w-[200px] sm:ml-auto md:max-w-[250px] lg:max-w-[300px] mx-auto sm:mx-0 group" data-aos="flip-right">
+          <div className="absolute inset-0 overflow-hidden rounded-full">
+            <div className="absolute overflow-hidden bg-gradient-to-r from-primary/20 via-primary/10 to-primary inset-[-2px] animate-[spin_6s_infinite] rounded-lg"></div>
           </div>
-        </FadeIn>
+          <div className="relative rounded-full m-[5px] h-cal(100%-2px) overflow-hidden">
+            <img
+              src="Eyob_img.webp"
+              srcSet="Eyob_img.webp 1x, Eyob_img@2x.webp 2x"
+              alt=""
+              className="rounded-lg"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
