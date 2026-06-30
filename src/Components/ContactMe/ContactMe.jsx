@@ -168,29 +168,29 @@ const ContactMe = () => {
               )}
             </div>
             <div className="w-full flex flex-col gap-4">
-              <div>
-                <p className="text-2xl text-black dark:text-white">
+              <div data-aos="fade-up">
+                <p className="text-2xl text-black dark:text-white" >
                   Let's connect
                 </p>
                 <p className="opacity-70 text-black/80 dark:text-white/80">
                   Feel free to reach out
                 </p>
               </div>
-              <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg">
+              <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg"data-aos="fade-up">
                 <Mail className="text-primary" />
                 <div className="text-secondary">
                   <p>Email</p>
                   <p>eyobalayu15@gmail.com</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg">
+              <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg" data-aos="fade-up">
                 <MapPin className="text-primary" />
                 <a className="text-secondary" href="tel:+251938241127">
                   <p>Call Me</p>
                   <p>+251938241127</p>
                 </a>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <p className="text-black/70 darK:text-white/70">
                   You can get me through
                 </p>

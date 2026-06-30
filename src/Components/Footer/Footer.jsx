@@ -13,22 +13,28 @@ const Footer = () => {
   return (
     <section className="mt-20">
       <div className="flex flex-col gap-5 md:grid grid-cols-[2fr_1fr_1fr] ">
-        <div className="flex flex-col gap-4" data-aos="fade-up">
-          <div className="">
-            <h3 className="bg-gradient-to-r from-primary to-secondary text-2xl w-fit bg-clip-text text-transparent font-bold">
+        <div className="flex flex-col gap-4">
+          <div data-aos="fade-up">
+            <h3 className="bg-linear-to-r from-primary to-secondary text-2xl w-fit bg-clip-text text-transparent font-bold">
               Eyob
             </h3>
             <p className="dark:text-white/60 text-black/70">
               Turning ideas into full-stack web solutions
             </p>
           </div>
-          <div className="flex gap-2 border py-3 px-4 rounded-lg border-primary/30 group">
+          <div
+            className="flex gap-2 border py-3 px-4 rounded-lg border-primary/30 group"
+            data-aos="fade-up"
+          >
             <Mail className="text-primary opacity-50 group-hover:opacity-80 transition-all duration-300" />
             <p className="text-secondary opacity-80 group-hover:opacity-100 transition-all duration-300">
               eyobalayu15@gmail.com
             </p>
           </div>
-          <div className="flex gap-2 border py-4 px-4 rounded-lg border-primary/30 group">
+          <div
+            className="flex gap-2 border py-4 px-4 rounded-lg border-primary/30 group"
+            data-aos="fade-up"
+          >
             <LocateIcon className="text-primary opacity-50 group-hover:opacity-80 transition-all duration-300" />
             <p className="text-secondary opacity-80 group-hover:opacity-100 transition-all duration-300">
               Bahirdar University
@@ -62,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center my-20 lg:hidden" >
+      <div className="flex flex-col items-center my-20 lg:hidden">
         <p className="dark:text-white/40 text-black/40">
           &copy; 2026 Eyob Alayu All rights reserved
         </p>
@@ -76,8 +82,8 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="flex justify-between border-t border-black/60 dark:border-white/30" >
-        <ul className=" pl-5 marker:text-primary/50 group flex text-xs sm:text-sm  gap-3 sm:gap-4 md:gap-6 py-3 " >
+      <div className="flex justify-between border-t border-black/60 dark:border-white/30">
+        <ul className=" pl-5 marker:text-primary/50 group flex text-xs sm:text-sm  gap-3 sm:gap-4 md:gap-6 py-3 ">
           {navLinks.map((link) => (
             <li key={link._id} className="hover:marker:text-primary/100 ">
               <button
@@ -89,7 +95,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className=" hidden lg:flex gap-2 text-xs items-center" >
+        <div className=" hidden lg:flex gap-2 text-xs items-center">
           <p className="dark:text-white/40 text-black/40">
             &copy; 2026 Eyob Alayu All rights reserved
           </p>
