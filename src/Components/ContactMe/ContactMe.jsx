@@ -87,11 +87,11 @@ const ContactMe = () => {
     <section className="mt-20 " id="contact-me">
       <div className="flex flex-col gap-3 ">
         <div>
-          <div className="flex items-center justify-center gap-2 border border-primary/60 w-fit px-2 py-[2px] rounded-lg bg-primary/10 my-2 mx-auto">
+          <div className="flex items-center justify-center gap-2 border border-primary/60 w-fit px-2 py-[2px] rounded-lg bg-primary/10 my-2 mx-auto" data-aos="fade-up">
             <SiChatbot className="text-primary" />
             <span className="text-secondary">Get In Touch</span>
           </div>
-          <p className="text-center opacity-80 my-2 text-black/80 dark:text-white/80">
+          <p className="text-center opacity-80 my-2 text-black/80 dark:text-white/80" data-aos="fade-up">
             You can send me a message anytime
           </p>
           <div className="flex flex-col gap-5 md:flex-row items-center">
