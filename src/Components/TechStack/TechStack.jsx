@@ -11,15 +11,18 @@ import { SiTailwindcss } from "react-icons/si";
 import { FadeIn } from "../../Animations/FadeIn";
 const TechStack = () => {
   const icons = [
-    "html5",
-    "css3",
-    "js",
-    "react",
-    "node",
-    "mongo",
-    "mysql",
-    "tailwind",
-    "git",
+    "HTML5",
+    "CSS3",
+    "JAVASCRIPT",
+    "TYPESCRIPT",
+    "REACT",
+    "NODEJS",
+    "REDUX",
+    "FIREBASE",
+    "MONGODB",
+    "MYSQL",
+    "TAILWINDCSS",
+    "GIT",
   ];
   return (
     <section
@@ -36,9 +39,9 @@ const TechStack = () => {
       <FadeIn>
         <div className="flex justify-center items-center ">
           <div className="flex flex-wrap gap-10 sm:gap-15 md:gap-20 mt-10 justify-center">
-            {icons.map((icon , ind) => (
-              <svg key={ind} className=" icon w-15 h-15 min-[400px]:w-20 h-20 sm:w-25 h-25 ">
-                <use href={`/sprite.svg#${icon}`} />
+            {icons.map((icon, ind) => (
+              <svg key={ind} className=" icon w-15 h-15 sm:w-18 sm:h-18  hover:scale-110 duration-300">
+                <use href={`/tech_stack_sprite.svg#${icon}`} />
               </svg>
             ))}
           </div>
