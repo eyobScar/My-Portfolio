@@ -39,4 +39,16 @@ export const projects = [
     liveURL: "https://eyobas-doctor-appointment-client.onrender.com/",
     githubURL: "https://github.com/eyobScar/Doctor-Appointment.git",
   },
+  {
+    id: 4,
+    title: "Blog App",
+    description:
+      "A full-stack blog web application that allows users to register, log in, and create, read, update, and delete blog posts. It includes a comment system where users can interact on posts, along with secure authentication using JWT and a clean, responsive UI for a smooth user experience.",
+    image: "blog_app.png",
+    image2x: "blog_app.png",
+    category: "Full Stack",
+    techs: ["React", "Tailwind", "Node.js", "Redux", "Firebase", "MongoDB"],
+    liveURL: "https://eyobas-blog-app.onrender.com/",
+    githubURL: "https://github.com/eyobScar/Blog-app.git",
+  },
 ];
